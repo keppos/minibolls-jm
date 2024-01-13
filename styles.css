@@ -1,0 +1,509 @@
+/* General starts */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat-medium;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/bakgrund3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+p {
+  font-family: montserrat-medium;
+  font-size: 1em;
+}
+
+section {
+  padding: 100px 0 100px;
+}
+
+.separator {
+  width: 50px;
+  background-color: rgb(81, 255, 0);
+  height: 2px;
+  margin: 10px 0 0;
+}
+
+.separator-centered {
+  width: 50px;
+  background-color: rgb(81, 255, 0);
+  height: 2px;
+  margin: 10px auto 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h4 {
+  margin: 10px 0 10px;
+}
+
+/* General ends */
+
+/* Header starts */
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 40px 0;
+  cursor: pointer;
+  transition: ease-in-out 0.04s;
+  border-bottom: white solid 0px;
+}
+
+nav ul li:hover {
+  transition: ease-in-out 0.04s;
+  padding-bottom: 3px;
+  border-bottom: white solid 1px;
+}
+
+#miniboll-logo {
+  height: 35px;
+  cursor: pointer;
+}
+
+#contact-list {
+  display: none;
+}
+
+#contact-button {
+  background: none;
+  padding: 15px 25px 15px;
+  border-radius: 100px 20px;
+  border: rgb(255, 255, 255) solid 1px;
+  cursor: pointer;
+  color: white;
+  transition: ease-in-out 0.1s;
+}
+
+#contact-button:hover {
+  transition: ease-in-out 0.1s;
+  border-radius: 20px 100px;
+}
+
+/* Hamburger */
+
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger {
+  width: 45px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn-burger::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Home */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102vh;
+  background: none;
+}
+
+.booking-button {
+  margin: 25px 0 20px;
+  padding: 15px 30px 15px;
+  border: rgb(255, 255, 255) solid 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  color: white;
+  background: none;
+}
+
+.booking-button:hover {
+  transition: ease-in-out 0.2s;
+  padding: 15px 40px 15px;
+}
+
+/* About */
+
+.about {
+  text-align: left;
+}
+
+.about p {
+  margin-top: 10px;
+}
+
+#pic-of-team {
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 15em;
+}
+
+.about-text p {
+  margin-top: 15px;
+}
+
+/* Rules */
+
+.rules {
+  text-align: left;
+}
+
+.rules p {
+  margin: 10px 0 10px;
+}
+
+/* Booking starts */
+
+.booking {
+  text-align: center;
+}
+
+.booking-form {
+  margin-top: 20px;
+}
+
+#booking-api {
+  border: rgb(0, 174, 255) solid 3px;
+  margin-top: 10px;
+}
+
+/* Teams */
+
+.teams {
+  text-align: left;
+}
+
+.teams p {
+  margin: 10px 0 10px;
+}
+
+/* Contact */
+
+.contact-info-heading {
+  width: fit-content;
+}
+
+.contact-info-subheading {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.contact-info {
+  width: 500px;
+}
+
+.contact-info-text {
+  margin-top: 50px;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-info-text p {
+  margin: 3px 0 23px;
+}
+
+#red {
+  margin-top: 10px;
+  color: rgb(255, 0, 0, 0.9);
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0 0 15px;
+  color: rgb(81, 255, 0);
+}
+
+#location-map {
+  height: 380px;
+  width: 500px;
+  border: rgb(81, 255, 0) 2px solid;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  font-family: montserrat-light;
+  display: flex;
+  padding: 10px 0 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-top: solid rgb(255, 255, 255) 2px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+#credits a {
+  color: rgb(9, 255, 0);
+  text-decoration: none;
+  transition: ease 0.2s;
+}
+
+#credits a:hover {
+  color: rgb(138, 87, 189);
+  transition: ease 0.2s;
+}
+
+/* MediaQuerys */
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    justify-content: left;
+    width: 90%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .rules {
+    width: 90%;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+  .menu-btn {
+    display: flex;
+  }
+
+  #contact-list {
+    display: flex;
+  }
+
+  #contact-button {
+    display: none;
+  }
+
+  nav {
+    position: absolute;
+    display: none;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid rgb(0, 174, 255) 2px;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 50px 30px;
+  }
+
+  nav ul li:hover {
+    transition: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  body {
+    background-position: top;
+    background-attachment: scroll;
+    background-size: 200vh;
+  }
+
+  section {
+    padding: 80px 0 80px;
+    background-color: rgb(19, 19, 19);
+  }
+
+  .about-heading {
+    margin: auto;
+  }
+
+  .booking-heading {
+    margin: auto;
+  }
+
+  .contact-info {
+    margin: 0 8% 0;
+  }
+
+  .contact-info-heading {
+    margin: auto;
+  }
+
+  .booking-form {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #booking-api {
+    width: 94%;
+    margin: 20px 3% 0;
+  }
+
+  .contact-info-text {
+    width: fit-content;
+    margin: 50px 0 0;
+  }
+
+  .contact {
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .about-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  footer {
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .location {
+    width: 100%;
+  }
+
+  #location-map {
+    text-align: center;
+    width: 90%;
+    margin: 0 5% 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .booking-button {
+    margin: 20px 0 0;
+    padding: 10px 20px 10px;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 174, 255) solid 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: ease-in-out 0.1s;
+    background-color: rgb(0, 174, 255);
+    cursor: pointer;
+  }
+}
+
+/* MediaQuerys ends */
+
+/* Portrait mediaQuery starts */
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .home {
+    padding-top: 70vh;
+  }
+}
+
+/* Portrait mediaQuery ends */
+
+/* Fonts */
+
+@font-face {
+  font-family: montserrat-light;
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat-medium;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: condensed;
+  src: url(./fonts/OpenSansCondensed-Bold.ttf);
+}

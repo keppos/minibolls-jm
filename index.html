@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="miniboll, minibolls-jm, minibolls jm, jakobstad fotboll, jakobstads mästerskap"
+    />
+
+    <meta
+      name="description"
+      content="Minibolls-JM! Jakobstads mästerskap i fotboll."
+    />
+    <link rel="icon" type="image/x-icon" href="./img/abbeslogo.png" />
+
+    <title>Minibolls-JM | Jakobstads mästerskap i fotboll</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./jquery.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/858655c6be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="miniboll-logo" src="./img/hemsida logo (3).png" alt="logo" />
+      <nav>
+        <ul>
+          <li id="go-to-about">VAD ÄR MINIBOLL?</li>
+          <li id="go-to-rules">REGLER</li>
+          <li id="go-to-booking">LAGANMÄLNING</li>
+          <li id="contact-list" class="go-to-contact">KONTAKT</li>
+        </ul>
+      </nav>
+
+      <button id="contact-button" class="go-to-contact">KONTAKT</button>
+
+      <div class="menu-btn">
+        <div class="menu-btn-burger"></div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="info">
+        <h1>MINIBOLLS-JM</h1>
+        <h2>29 JULI 2023</h2>
+        <button class="booking-button">ANMÄL ETT LAG</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <main>
+        <section>
+          <div class="about content">
+            <h2>VAD ÄR MINIBOLLS-JM?</h2>
+            <div class="separator"></div>
+            <p>Ett Jakobstadsmästerskap i Miniboll.</p>
+            <img
+              src="./img/minibolllag.png"
+              id="pic-of-team"
+              alt="bild på vinnande lag"
+            />
+          </div>
+        </section>
+
+        <section>
+          <div class="rules">
+            <h2>REGLER</h2>
+            <div class="separator"></div>
+            <h4>Evenemang</h4>
+            <p>
+              All typ av berusningsmedel så som alkohol och droger är strängt
+              förbjudet.
+            </p>
+            <p>Håll området rent och släng sopor i avsedda behållare.</p>
+            <p>Respektera domarna och deltagarna.</p>
+            <p id="red">
+              Arrangörerna ansvarar inte för eventuella personskador eller
+              förlorade/stulna föremål.
+            </p>
+            <p></p>
+            <br />
+            <h4>Spel</h4>
+            <p>Spelas utan skor med eller utan strumpor.</p>
+            <p>2x12min. Gula/röda kort. Ingen offside. Bollstorlek: 2.</p>
+            <p>
+              Inkast från fötterna, d.v.s bollen placeras på sidlinjen och
+              passas in.
+            </p>
+            <p></p>
+          </div>
+        </section>
+
+        <section class="booking">
+          <div class="booking-form">
+            <h2>ANMÄL ETT LAG</h2>
+            <div class="separator-centered"></div>
+            <br />
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLScl_3tuM-bI_gCQCF0v1B_g7p9tFifohnD_LUQL41baxzw_LQ/viewform?embedded=true"
+              width="640"
+              height="500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Läser in …</iframe
+            >
+          </div>
+        </section>
+
+        <section>
+          <div class="teams">
+            <h2>DELTAGANDE LAG</h2>
+            <div class="separator"></div>
+            <p>
+              1. Kevin Österberg, Calle Strang, Juuso Öst, Alexander Bobacka,
+              Teemu Järvenlahti
+            </p>
+            <p>2. Jonathan Nylund, Samuel Lillqvist, Anton Sandlin</p>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="contact-info">
+            <div class="contact-info-subheading">
+              <h2>KONTAKTA OSS</h2>
+              <div class="separator"></div>
+              <br />
+              <p>Kontakta oss vid frågor.</p>
+              <p>
+                Ni når oss smidigast via telefon eller sms, det går även att
+                skicka mail så svarar vi inom 24h.
+              </p>
+              <p id="red">Avanmälningar endast via telefon.</p>
+            </div>
+
+            <div class="contact-info-text">
+              <h3>Mikael Nystrand</h3>
+              <a href="tel:+358458529825">045 8529 825</a><br />
+              <a href="mailto:albin@abbesklipperi.fi"
+                >mikael.g.nystrand@gmail.com</a
+              >.<br />
+            </div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.9623973260054!2d22.707722774017295!3d63.67085695117147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468768109a39f443%3A0xdcb8152f9711c65b!2sUnited%20kentt%C3%A4!5e1!3m2!1ssv!2sfi!4v1687453714206!5m2!1ssv!2sfi"
+            id="location-map"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>© 2023 Minibolls-JM. Alla rättigheter förbehållna.</p>
+      <p id="credits">
+        Webbdesign:
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/kevin-%C3%B6sterberg-24640b1a5/"
+        >
+          <b>Kevin Österberg</b>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
